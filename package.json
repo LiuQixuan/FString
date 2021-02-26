@@ -1,0 +1,34 @@
+{
+  "name": "fstring",
+  "version": "1.0.0",
+  "description": "npm package to format value like python f-string.",
+  "main": "index.js",
+  "scripts": {
+    "run-test": "node ./test/test.js",
+    "re-test": "tsc -p ./test/tsconfig.json&&node ./test/test.js",
+    "re-build": "tsc -p ./src/tsconfig.json&&node ./test/test.js",
+    "re-build-all": "tsc -p ./src/tsconfig.json&&tsc -p ./test/tsconfig.json&&node ./test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LiuQixuan/FString.git"
+  },
+  "keywords": [
+    "format",
+    "format print",
+    "fstring",
+    "printf",
+    "python value format",
+    "value format"
+  ],
+  "author": "LiuQixuan@Aiusoft",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LiuQixuan/FString/issues"
+  },
+  "homepage": "https://github.com/LiuQixuan/FString#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^4.1.5"
+  }
+}

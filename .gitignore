@@ -1,0 +1,14 @@
+# dependencies
+node_modules/
+
+# vscode setting
+/.vscode/
+
+# misc
+.DS_Store
+
+# build script launch
+*.ps1
+
+# npm ignore
+.npmignore
