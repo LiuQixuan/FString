@@ -54,7 +54,7 @@ format 方法接收一个string类型参数返回一个格式化后的string参�
 
 fstring 格式描述符图解[^2]
 
-![fstring 格式描述符图解](f_string_introduce)
+![fstring 格式描述符图解](https://github.com/LiuQixuan/FString/blob/main/public/Python%20f-string.png?raw=true)
 
 ### **f-string 语法**[^3]
 f-string采用 {content:format} 设置字符串格式，其中 content 是替换并填入字符串的内容，可以是变量、表达式或函数等，format是格式描述符。采用默认格式时不必指定 {:format}，如上面例子所示只写 {content} 即可。

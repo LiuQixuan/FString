@@ -12,3 +12,6 @@ node_modules/
 
 # npm ignore
 .npmignore
+
+#tmp md file
+.f-string-syntax.md
