@@ -205,9 +205,9 @@ Error point at:
 使用Python的fstring格式化参数,易学易用.掌握Python的fstring语法的同学几乎0成本上手.
 格式化效果齐全广泛应用于日常开发,满足一般需求.
 ## 历史版本
--  ✅v1.0.0 发布FString包,实现基本功能,测试无明显bug,支持抛出异常.
+-  ✅v0.0.1 发布FString包,实现基本功能,测试无明显bug,支持抛出异常.
 支持参数解析异常点定位,优化异常抛出提示.
--  🟩v1.0.X 添加更多语法,增强鲁棒性,修复潜在BUG
+-  🟩v0.0.X 添加更多语法,增强鲁棒性,修复潜在BUG
 [^1]:https://www.python.org/dev/peps/pep-0378/#main-proposal-from-nick-coghlan-originally-called-proposal-i
 [^2]:https://blog.csdn.net/u010516151/article/details/101272807
 [^3]:https://blog.csdn.net/sunxb10/article/details/81036693

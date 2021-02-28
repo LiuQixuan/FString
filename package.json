@@ -1,6 +1,6 @@
 {
   "name": "fstring",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "npm package to format value like python f-string.",
   "main": "index.js",
   "scripts": {

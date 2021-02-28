@@ -1,2 +1,2 @@
-export { format } from './lib/FString';
+export { injectFormatToString } from './lib/FString';
 //# sourceMappingURL=index.d.ts.map

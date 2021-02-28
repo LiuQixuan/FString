@@ -217,13 +217,13 @@
         "affectsGlobalScope": true
       },
       "./lib/fstring.d.ts": {
-        "version": "e860cafa2b7f1e6e56f868d4ba688b80e897eade0e74caa28ee02689842fa7bc",
-        "signature": "e860cafa2b7f1e6e56f868d4ba688b80e897eade0e74caa28ee02689842fa7bc",
+        "version": "601e79e6bb5a108e22116a724f4144e4b6762f78e7ab7373a65b88bae2f60a16",
+        "signature": "601e79e6bb5a108e22116a724f4144e4b6762f78e7ab7373a65b88bae2f60a16",
         "affectsGlobalScope": false
       },
       "./index.ts": {
-        "version": "40b2a2fd99a254f786645c8793bb642e23891e0f9fd3dc8d529965fbf8e2a54c",
-        "signature": "745179d1d1309ea00fbcdab5cc4c9ac9d2084789576f4e21146eb02f3ecd9c30",
+        "version": "a09eafc12bec634524d8fea7389ca20a46387c76f34f41ec3167f0ab815ee427",
+        "signature": "3d6b198486cd99b1e89e8bb0b171f530a58b5fd6bdd975ab36557618aabbb18c",
         "affectsGlobalScope": false
       }
     },
