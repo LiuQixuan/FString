@@ -2,7 +2,7 @@
 
 # FString
 ## 简介
-JS默认没有一个同一个格式化输出方法,只能使用number类型自带的一些小数位保留方法和进制转换方法.很明显,这些在日常使用中是远远不够的.ES6新出的模板字符串给我灵感,让我想起Python的fstring.<br>
+JS默认没有一个统一的格式化输出方法,只能使用number类型自带的一些小数位保留方法和进制转换方法.很明显,这些在日常使用中是远远不够的.ES6新出的模板字符串给我灵感,让我想起Python的fstring.<br>
 用过Python fstring和format的同学都知道格式化输出功能十分好用全面.然而JS却没有这样的好东西.没有条件创造条件,撸起袖子就是干.当前版本尚未实现Python的{str:format}语法(这绝对是JS的锅,找遍全网都没有更改模板字符串默认行为的方法).希望能够在今后找到一种更合理易用的语法.
 
 ## 此npm包支持格式化形式:
@@ -205,9 +205,10 @@ Error point at:
 使用Python的fstring格式化参数,易学易用.掌握Python的fstring语法的同学几乎0成本上手.
 格式化效果齐全广泛应用于日常开发,满足一般需求.
 ## 历史版本
--  ✅v0.0.1 发布FString包,实现基本功能,测试无明显bug,支持抛出异常.
-支持参数解析异常点定位,优化异常抛出提示.
+-  ✅v0.0.1 发布FString包,实现基本功能,测试无明显bug,支持抛出异常.支持参数解析异常点定位,优化异常抛出提示.
+-  ✅v0.0.2 修复1或0或其他整数格式化成定点浮点小数输出的异常,优化非科学表示法默认不进行普通小数转化,优化性能.
 -  🟩v0.0.X 添加更多语法,增强鲁棒性,修复潜在BUG
+-  
 [^1]:https://www.python.org/dev/peps/pep-0378/#main-proposal-from-nick-coghlan-originally-called-proposal-i
 [^2]:https://blog.csdn.net/u010516151/article/details/101272807
 [^3]:https://blog.csdn.net/sunxb10/article/details/81036693
