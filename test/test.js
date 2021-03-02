@@ -13,9 +13,11 @@ console.log('result:', ':+#020x'.format('100'));
 console.log('result:', ':+#020X'.format('100'));
 console.log('result:', ':#<-#020.2d'.format('1000000000'));
 var format = ':*<+20,.5g';
-'11456.15454'.format(format);
-'11456.15454'.format(':*<+20,.5g');
-var money = '123456789.456789';
+console.log('result:', '11456.15454'.format(format));
+console.log('result:', '11456.15454'.format(':*<+20,.5g'));
+console.log('result:', format.format('1'));
+console.log('result:', format.format('0'));
 format = ':15,.2f';
+var money = '123456789.456789';
 console.log("\u603B\u91D1\u989D\u4E3A:" + money.format(format) + "\u5143");
 //# sourceMappingURL=test.js.map

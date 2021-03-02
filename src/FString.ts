@@ -5,7 +5,7 @@
  * Created Date: 2021-02-23  11:46:05
  * Author: LiuQixuan(liuqixuan@hotmail.com)
  * -----
- * Last Modified:  2021-02-27  12:16:18
+ * Last Modified:  2021-03-02  4:03:41
  * Modified By: LiuQixuan
  * -----
  * Copyright 2020 - 2021 AIUSoft by LiuQixuan
@@ -16,10 +16,12 @@ function toNonExponential(num: string) {
   let m = parseFloat(num).toExponential().toString().match(/\d(?:\.(\d*))?e([+-]\d+)/)
   let fractionDigits = 0
   if (m !== null) {
+    if(m[1]===undefined){
+      m[1] = ''
+    }
     let tmp = m[1].length - parseInt(m[2])
     if (tmp > 0) {
       fractionDigits = tmp
-
     }
   }
   return parseFloat(num).toFixed(fractionDigits);
@@ -190,7 +192,9 @@ function format(/*raw_s: string,*/ param: string) {
     raw = raw.slice(0, decimalWidth)
   } else if (/[fg%]/i.test(format)) {
     raw = raw.replace(/[^\+\-\.0-9eEoObBdDxXn]/g, '')
-    raw = toNonExponential(raw)
+    if (/e{1}/i.test(raw)) {
+      raw = toNonExponential(raw)
+    }
     if (format === 'g' || format === 'G') {
       raw = parseFloat(raw).toPrecision(decimalWidth).toString()
     } else if (format === 'f' || format === 'F') {

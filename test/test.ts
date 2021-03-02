@@ -5,7 +5,7 @@
  * Created Date: 2021-02-24  2:21:24
  * Author: LiuQixuan(liuqixuan@hotmail.com)
  * -----
- * Last Modified:  2021-02-27  1:12:45
+ * Last Modified:  2021-03-02  4:09:58
  * Modified By: LiuQixuan
  * -----
  * Copyright 2020 - 2021 AIUSoft by LiuQixuan
@@ -38,15 +38,19 @@ console.log('result:', ':+#020x'.format('100'))
 // @ts-ignore
 console.log('result:', ':+#020X'.format('100'))
 // @ts-ignore
-console.log('result:', ':#<-#020.2d'.format('1000000000'));
+console.log('result:', ':#<-#020.2d'.format('1000000000'))
 
 let format = ':*<+20,.5g'
 // @ts-ignore
-'11456.15454'.format(format)
+console.log('result:','11456.15454'.format(format))
 // @ts-ignore
-'11456.15454'.format(':*<+20,.5g')
+console.log('result:','11456.15454'.format(':*<+20,.5g'))
+// @ts-ignore
+console.log('result:', format.format('1'))
+// @ts-ignore
+console.log('result:', format.format('0'))
 
-let money = '123456789.456789'
 format = ':15,.2f'
+let money = '123456789.456789'
 // @ts-ignore
 console.log(`总金额为:${money.format(format)}元`)

@@ -217,7 +217,7 @@
         "affectsGlobalScope": true
       },
       "../src/fstring.ts": {
-        "version": "bcad59f0813bb39136d9f406aee150a6bf4ea4e548cc842567ab3e1afea7a58d",
+        "version": "b36665e82d401d65bba8683a58932a3853f43ebebc798aa75e1497e675832a22",
         "signature": "601e79e6bb5a108e22116a724f4144e4b6762f78e7ab7373a65b88bae2f60a16",
         "affectsGlobalScope": false
       }
