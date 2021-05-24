@@ -3,7 +3,7 @@
 # FString
 ## 简介
 JS默认没有一个统一的格式化输出方法,只能使用number类型自带的一些小数位保留方法和进制转换方法.很明显,这些在日常使用中是远远不够的.ES6新出的模板字符串给我灵感,让我想起Python的fstring.<br>
-用过Python fstring和format的同学都知道格式化输出功能十分好用全面.然而JS却没有这样的好东西.没有条件创造条件,撸起袖子就是干.当前版本尚未实现Python的{str:format}语法(这绝对是JS的锅,找遍全网都没有更改模板字符串默认行为的方法).希望能够在今后找到一种更合理易用的语法.
+用过Python fstring和format的同学都知道格式化输出功能十分好用全面.然而JS却没有这样的好东西.没有条件创造条件,撸起袖子就是干.~~当前版本尚未实现Python的{str:format}语法(这绝对是JS的锅,找遍全网都没有更改模板字符串默认行为的方法).希望能够在今后找到一种更合理易用的语法.~~ 最新版本使用字符串解析的形式类似实现Python字符串模板格式化,详细用法见用法和测试.
 
 ## 此npm包支持格式化形式:
 2. 指定变量对齐方式
@@ -41,6 +41,15 @@ let format = ':*<+20,.5g'
 let money = '123456789.456789'
 let format = ':15.2f'
 console.log(`总金额为:${money.format(format)}元`)
+...
+```
+风格三(最近更新,字符串模板格式化):
+```JavaScript
+let format = ':15.2f'
+let money = '123456789.456789'
+console.log(f`总金额为:{${money}:15,.2f}元`)
+console.log(f`总金额为:{${money}:${format}}元`)
+console.log(f`数量{${'1'}}单价{${'15.32'}:}总金额为:{${money}:15,.2f}元`)
 ...
 ```
 ## 参数说明
@@ -142,6 +151,21 @@ f-string采用 {content:format} 设置字符串格式，其中 content 是�
 
 ## 测试
 
+** 更新 **
+>添加类似Python的f' '字符串模板格式化功能.
+字符串模板格式化输出测试
+```javascript
+
+let format = ':15.2f'
+let money = '123456789.456789'
+console.log(f`总金额为:{${money}:${format}}元`)
+//总金额为: 123,456,789.46元
+console.log(f`总金额为:{${money}:15,.2f}元`)
+//总金额为: 123,456,789.46元
+console.log(f`数量{${'1'}}单价{${'15.32'}:}总金额为:{${money}:15,.2f}元`)
+//数量1单价15.32总金额为: 123,456,789.46元
+```
+
 基本格式化输出测试
 ```javascript
 // @ts-ignore
@@ -207,6 +231,7 @@ Error point at:
 ## 历史版本
 -  ✅v0.0.1 发布FString包,实现基本功能,测试无明显bug,支持抛出异常.支持参数解析异常点定位,优化异常抛出提示.
 -  ✅v0.0.2 修复1或0或其他整数格式化成定点浮点小数输出的异常,优化非科学表示法默认不进行普通小数转化,优化性能.
+-  ✅v0.0.3 更新f标签函数,可以使用类似python的f''字符串模板,修复formatString传参为空或没有传参的情况,优化错误输出.
 -  🟩v0.0.X 添加更多语法,增强鲁棒性,修复潜在BUG
 -  
 [^1]:https://www.python.org/dev/peps/pep-0378/#main-proposal-from-nick-coghlan-originally-called-proposal-i

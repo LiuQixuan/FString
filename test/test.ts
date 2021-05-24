@@ -5,14 +5,14 @@
  * Created Date: 2021-02-24  2:21:24
  * Author: LiuQixuan(liuqixuan@hotmail.com)
  * -----
- * Last Modified:  2021-03-02  4:09:58
+ * Last Modified:  2021-05-24  1:09:47
  * Modified By: LiuQixuan
  * -----
  * Copyright 2020 - 2021 AIUSoft by LiuQixuan
  * ------------------------------------
  */
 
-import { injectFormatToString} from '../lib/FString'
+import { injectFormatToString,f} from '../lib/FString'
 // format('','o^-#012,.8f')
 injectFormatToString()
 // // @ts-ignore
@@ -54,3 +54,6 @@ format = ':15,.2f'
 let money = '123456789.456789'
 // @ts-ignore
 console.log(`总金额为:${money.format(format)}元`)
+console.log(f`总金额为:{${money}:${format}}元`)
+console.log(f`总金额为:{${money}:15,.2f}元`)
+console.log(f`数量{${'1'}}单价{${'15.32'}:}总金额为:{${money}:15,.2f}元`)

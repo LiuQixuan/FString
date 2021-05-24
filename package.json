@@ -1,6 +1,6 @@
 {
   "name": "fstring",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "npm package to format value like python f-string.",
   "main": "index.js",
   "scripts": {
@@ -27,8 +27,7 @@
     "url": "https://github.com/LiuQixuan/FString/issues"
   },
   "homepage": "https://github.com/LiuQixuan/FString#readme",
-  "dependencies": {},
   "devDependencies": {
-    "typescript": "^4.1.5"
+    "typescript": "^4.2.4"
   }
 }
